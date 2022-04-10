@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+
+<!-- Here start internal css-->   
+   <style>
+       /*  Here we use #secondpara which is #id of paragraph  [if we want to use id then use '#' and we want to use class then use '.' */
+
+        /* (1) CSS ELEMENT SELECTOR */
+        p{
+            color: red;
+            background-color: chartreuse;
+        }
+
+        /* (2) CSS ID SELECTOR    [here id is #secondPara]*/
+        #secondPara                     
+        {
+            color: blue;
+            background-color: cyan;
+        }
+
+        /* (3) CSS CLASS SELECTOR    [here class is .lightblueBg]*/
+        .lightblueBg
+        {
+            color: black;
+            background-color: lightblue;
+        }
+
+        /* (4) CSS GROUPING SELECTOR */
+        footer,span
+        {
+            background-color: lightpink;
+        }
+
+        /* Grouping + border effect */
+        p , #secondPara , .lightblueBg , footer , span
+        {
+            border: 2px solid purple;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CSS SELECTORS</h3>
+    <p> This is simple paragraph to demonstrate CSS selectors</p>
+    <p id="secondPara">This is another paragraph to demonstrate CSS selectors</p>
+
+    <div>
+        <p class="lightblueBg">This is third paragraph to demonstrate CSS selectors which is inside div </p>
+    </div>
+
+    <div>
+        <footer>This is footer</footer>
+    </div>
+
+    <div>
+        <span>This is span </span>
+    </div>
+
+</body>
+</html>
